@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ebebeb"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/image_cart_top_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="购物车还是空的， 快去挑几件中意的商品吧"
+                android:textColor="#777"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_user_fm_act_cart_go_shopping"
+                android:layout_width="100dp"
+                android:layout_height="41.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/image_cart_goshopping" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ebebeb"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="1"
+                    android:background="#aaa" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#ebebeb"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/image_cart_mid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:text="看看热卖"
+                        android:textColor="#777"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="1"
+                    android:background="#aaa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show1" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="195dp"
+                    android:background="#ebebeb" />
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show2" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="195dp"
+                    android:background="#ebebeb" />
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show1" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="195dp"
+                    android:background="#ebebeb" />
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show2" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="195dp"
+                    android:background="#ebebeb" />
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="195dp"
+                    android:background="@drawable/image_cart_show1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0075c4"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_fm_act_cart_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back_background" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="29.34dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/image_cart_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

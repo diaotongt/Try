@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+  
+    
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#1000" >
+        
+        <RadioButton 
+            android:id="@+id/rb_home"
+            style="@style/bottom_tag_style"
+            android:text="首页"
+            android:drawableTop="@drawable/home_selector"/>
+        <RadioButton 
+            android:id="@+id/rb_payticket"
+            style="@style/bottom_tag_style"
+            android:text="购票"
+            android:drawableTop="@drawable/payticket_selector"/>
+        <RadioButton 
+            android:id="@+id/rb_shop"
+            style="@style/bottom_tag_style"
+            android:text="商城"
+            android:drawableTop="@drawable/shop_selector"/>
+        <RadioButton 
+            android:id="@+id/rb_discover"
+            style="@style/bottom_tag_style"
+            android:text="发现"
+            android:drawableTop="@drawable/discover_selector"/>
+        <RadioButton 
+            android:id="@+id/rb_user"
+            style="@style/bottom_tag_style"
+            android:text="我的"
+            android:drawableTop="@drawable/user_selector"/>
+    </RadioGroup>
+
+    <View 
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7000"
+        android:layout_above="@id/rg_main"/>
+    
+ 	<FrameLayout 
+        android:id="@+id/fl_main"
+        android:layout_above="@id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+ 	
+
+
+</RelativeLayout>

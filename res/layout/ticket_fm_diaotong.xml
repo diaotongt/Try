@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- diaotong and Wangnan -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_ticket_fragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2485c6"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_ticket_fragment_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="北京"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/city_select_array"
+            android:drawablePadding="5dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_ticket_fragment_top_film"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/image_ticket_top_film_on" />
+
+            <ImageView
+                android:id="@+id/iv_ticket_fragment_top_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/image_ticket_top_cinema_off" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/title_bar_search_zoomin" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_ticket_fragment_content2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_ticket_fragment_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/fl_ticket_fragment_content1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_ticket_fragment_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+</RelativeLayout>

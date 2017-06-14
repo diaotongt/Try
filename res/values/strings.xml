@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MTime</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_welcome">MTime</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_adv">AdvActivity</string>
+    <string name="title_activity_user_message">UserMessageActivity</string>
+    <string name="title_activity_user_register">UserRegisterActivity</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+    <string name="st_mall_home_instred">你可能感兴趣的</string>
+    <string name="st_mall_home_instred_nomore">貌似没有更多了</string>
+    <string name="str_search_mall">搜索正版电影周边</string>
+    <string name="title_activity_user_cart">UserCartActivity</string>
+    <string name="title_activity_user_child_root">UserChildRootActivity</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="Discover_news_item">news_item_content</string>
+    <string name="Discover_ranklist_item">discover_ranklist_item</string>
+    <string name="title_activity_user_grand_child_root">UserGrandChildRootActivity</string>
+    <string name="str_search_something">搜索</string>
+    <string name="str_title_search_hint_content">找影片/影院/影人</string>
+    <string name="title_activity_mall_search_aty">MallSearchAty</string>
+    <string name="Time_Top_Activity">Time_Top_Activity</string>
+    <string name="Chinese_Top_Activity">Chinese_Top_Activity</string>
+    <string name="Discover_film_item">Discover_film_item</string>
+    <string name="Total_Activity">Total_Activity</string>
+</resources>

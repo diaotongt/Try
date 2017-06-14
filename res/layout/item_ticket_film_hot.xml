@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_item_ticket_film_hot_icon"
+        android:layout_width="85dp"
+        android:layout_height="130dp"
+        android:layout_weight="0"
+        android:background="@drawable/image_ticket_item_example" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_item_ticket_film_hot_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="杜拉拉追婚记"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_item_ticket_film_hot_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="6.5"
+                android:textColor="#659d0e"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_ticket_film_hot_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:text="”最后成了网红"
+            android:textColor="#ff8600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_item_ticket_film_hot_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:text="12月4日上映"
+            android:textColor="#777"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_item_ticket_film_hot_showinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:text="今日92家影院341场"
+            android:textColor="#777"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_item_ticket_film_hot_buy_ticket"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/home_button_buyticket2"
+                android:gravity="center"
+                android:text="购票"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+    
+	<RelativeLayout 
+	    android:id="@+id/rl_fragment_home_three_content_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="每日佳片"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginLeft="16dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="更多推荐"
+            android:textColor="#c000"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/home_hotplay_right_arrow"
+            android:drawablePadding="5dp"/>            
+    </RelativeLayout>
+    
+	<ImageView 
+	    android:id="@+id/iv_fragment_home_three_content_img"
+	    android:layout_width="match_parent"
+	    android:layout_height="140dp"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/adv_home_content3_congtianerjiang"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="148dp">
+	    
+	    <TextView 
+	        android:id="@+id/tv_fragment_home_three_content_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="从天儿降即将来袭"
+	        android:textSize="18sp"
+	        android:textColor="#000"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginLeft="16dp"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_fragment_home_three_content_desc" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="惊讶之余仓促上阵的奶爸奶妈们被搞的几近抓狂"
+	        android:textSize="14sp"
+	        android:textColor="#6000"
+	        android:layout_below="@id/tv_fragment_home_three_content_title"
+	        android:layout_alignLeft="@id/tv_fragment_home_three_content_title"
+	        android:layout_marginRight="100dp"
+	        android:layout_marginTop="8dp" />
+	    
+	    <View
+	        android:id="@+id/v_fragment_home_three_content_viewline"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_below="@id/tv_fragment_home_three_content_desc"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="16sp"
+	        android:layout_marginRight="16sp"
+	        android:background="#3000" />
+	    
+	   	<ImageView 
+	   	    android:id="@+id/iv_fragment_home_three_content_img2"
+	   	    android:layout_width="80dp"
+	   	    android:layout_height="120dp"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_alignParentBottom="true"
+	   	    android:layout_below="@id/tv_fragment_home_three_content_title"
+	   	    android:layout_marginTop="8dp"
+	   	    android:layout_marginRight="16dp"
+	   	    android:layout_marginBottom="10dp"
+	   	    android:src="@drawable/adv_themaster"/>
+	   		
+	   	<TextView
+	   	    android:id="@+id/tv_fragment_home_three_content_titleCn"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_below="@id/v_fragment_home_three_content_viewline"
+	   	    android:layout_toLeftOf="@id/iv_fragment_home_three_content_img2" 
+	   	    android:layout_marginTop="6dp"
+	   	    android:layout_marginRight="16dp"
+	   	    android:text="师傅"
+	   	    android:textSize="14sp"
+	   	    android:textColor="#000" />
+	   	
+	   	<TextView 
+	   	    android:id="@+id/tv_fragment_home_three_content_titleEn"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_below="@id/tv_fragment_home_three_content_titleCn"
+	   	    android:layout_toLeftOf="@id/iv_fragment_home_three_content_img2"
+	   	    android:layout_marginTop="4dp"
+	   	    android:layout_marginRight="16dp"
+	   	    android:text="The Master"
+	   	    android:textColor="#5000" />
+	   	
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mall_home_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/loading_failed_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/loading_failed_layout"
+            android:visibility="invisible" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both" >
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    layout="@layout/mall_home_scrollimg_layout" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/offset_10dp"
+                    android:layout_marginTop="@dimen/offset_10dp"
+                    layout="@layout/mall_home_titleicon_layout" />
+
+                <ImageView
+                    android:id="@+id/page_home_mallenter_seperated"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/order_remind_seperated_region_background" />
+
+                <include
+                    android:id="@+id/mall_home_cell"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/mall_home_cell_layout" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/mall_home_topic_layout" />
+
+                <LinearLayout
+                    android:id="@+id/mall_home_category_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <include
+                    android:id="@+id/mall_home_recommend_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/mall_home_intrested" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/home_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        layout="@layout/title_bar_mall_home" />
+
+    <ImageView
+        android:id="@+id/gotop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/offset_pxtodx_20"
+        android:layout_marginRight="@dimen/offset_pxtodx_20"
+        android:src="@drawable/gotop"
+        android:visibility="gone" />
+
+</RelativeLayout>

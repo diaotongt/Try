@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	  	    android:layout_height="match_parent"
+	  	    android:orientation="vertical">
+	        
+	        <!-- 上部说明 -->
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp">
+		       	<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="16dp"
+			        android:text="最受关注"
+			        android:textSize="20sp"
+			        android:textColor="#000"/>
+		    </RelativeLayout>
+	
+		    <!--水平滑动的组件-->
+		    <HorizontalScrollView 
+		        android:id="@+id/hsv_payticketfilm_comingpager"
+		        android:layout_width="match_parent"
+		        android:layout_height="200dp"
+		        android:scrollbars="none">
+		       	<LinearLayout 
+		       	    android:id="@+id/ll_inhsv_payticketfilm_comingpager"
+		       	    android:layout_width="match_parent"
+		       	    android:layout_height="match_parent"
+		       	    android:orientation="horizontal" >	       	    
+		       	</LinearLayout>
+		        
+		    </HorizontalScrollView>
+		    
+		    <!-- 灰线-分隔带 -->
+		    <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+	    
+		    <!-- 广告旗帜 -->
+		    <ImageView 
+		        android:id="@+id/iv_payticketfilm_comingpager_banner"
+		        android:layout_width="match_parent"
+		        android:layout_height="100dp" />
+		    
+		    <!-- 灰线-分隔带 -->
+		    <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp">
+			    <TextView 
+			        android:id="@+id/tv_payticketfilm_comingpager_content_title"
+			        android:layout_width="wrap_content"
+			       	android:layout_height="wrap_content"
+			       	android:layout_centerVertical="true"
+			       	android:layout_marginLeft="16dp"
+			       	android:text="即将上映(42部)"
+			       	android:textSize="20sp"
+			       	android:textColor="#000" />
+		    </RelativeLayout>
+		    
+		    <!-- 下方滚动视图的内容容器 -->
+		    <LinearLayout
+		        android:id="@+id/ll_payticketfilm_comingpager_content_comingmovie"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		        
+		    </LinearLayout>
+		    
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

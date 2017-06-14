@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 刁彤的用户中心界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0075c4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0075c4"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_fm_user_my_focus_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_btn_back_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="我的收藏"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_fm_user_my_focus_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/title_bar_search_zoomin" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_fm_user_my_focus_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_film"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_film"
+                android:button="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_cinema"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_cinema"
+                android:button="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_actor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_actor"
+                android:button="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_goods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_goods"
+                android:button="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_news"
+                android:button="@android:color/transparent" />
+
+            <RadioButton
+                android:id="@+id/rb_fm_user_my_focus_estimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_icon_user_my_focus_estimate"
+                android:button="@android:color/transparent" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ddd" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_fm_user_my_focus_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fm_user_my_focus_top_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0075c4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_fm_user_my_focus_top_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_comments_edit_background"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:hint="请输入关键字检索"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/tv_fm_user_my_focus_top_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fm_user_my_focus_noresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/search_result_no" />
+
+        <TextView
+            android:id="@+id/tv_fm_user_my_focus_noresult_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="未找到匹配结果"
+            android:textColor="#777"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

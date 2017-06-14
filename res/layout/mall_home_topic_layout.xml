@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mall_home_topic_title_height" >
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <HorizontalScrollView
+            android:id="@+id/mall_home_topic_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/mall_home_topic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/offset_pxtodx_100"
+                android:orientation="horizontal" />
+            
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topic_title_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_size_pxtosp_22" />
+
+    <TextView
+        android:id="@+id/topic_title_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_size_pxtosp_36" />
+
+    <com.atguigu.mtime.view.ScrollGridview
+        android:id="@+id/mall_home_topic_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="10.0dip"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10.0dip" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/offset_pxtodx_186"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/offset_12dp"
+        android:layout_marginTop="@dimen/offset_12dp"
+        android:background="@drawable/more_product_bg" >
+
+        <TextView
+            android:id="@+id/topic_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/offset_pxtodx_4"
+            android:text="更多商品"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/offset_6dp"
+            android:src="@drawable/right_mark" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/topic_seperate_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/order_remind_seperated_region_background" />
+
+</LinearLayout>

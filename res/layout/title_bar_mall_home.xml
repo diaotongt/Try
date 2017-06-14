@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/black_background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/mall_title" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/text_blue"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_bar_normal_back_margin_left"
+        android:background="@drawable/mall_home_scan"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="@dimen/title_bar_normal_back_view_width"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_bar_normal_back_margin_left"
+            android:background="@drawable/title_btn_back_background"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_search_search_margin_right"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mall_home_cart_icon" />
+
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_search_search_margin_right"
+        android:background="@drawable/mall_filter"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/search_region"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_search_region_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_bar_search_region_margin_left"
+        android:layout_marginRight="@dimen/title_bar_search_region_margin_right"
+        android:layout_toLeftOf="@id/cart"
+        android:layout_toRightOf="@id/scan"
+        android:background="@drawable/title_bar_search_region_background" >
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_bar_search_content_view_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_bar_search_content_margin_left"
+            android:layout_marginRight="@dimen/title_bar_search_content_margin_right"
+            android:background="@null"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="@dimen/title_bar_search_content_drawing_padding"
+            android:focusable="false"
+            android:gravity="left|center"
+            android:hint="@string/str_search_mall"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="@dimen/title_bar_search_content_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_fm_user_my_offset_goods_top_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="未使用(4)"
+                android:textColor="#0075c4"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/v_fm_user_my_offset_goods_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="0"
+                android:background="@drawable/dialog_bg_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_fm_user_my_offset_goods_top_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="已使用"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/v_fm_user_my_offset_goods_top_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="0"
+                android:background="@drawable/dialog_bg_blue"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_fm_user_my_offset_goods_top_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="已过期"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/v_fm_user_my_offset_goods_top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_weight="0"
+                android:background="@drawable/dialog_bg_blue"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fm_user_my_offset_goods_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

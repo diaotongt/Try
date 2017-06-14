@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ebebeb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ebebeb"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@color/color_movie_main_c3c3c3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/offset_pxtodx_100"
+            android:layout_centerInParent="true"
+            android:background="@color/color_ebebeb"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/home_recommended_daily_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/offset_pxtodx_15"
+                android:text="@string/st_mall_home_instred"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_size_pxtosp_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.atguigu.mtime.view.ScrollGridview
+        android:id="@+id/product_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="10.0dip"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10.0dip" />
+
+    <TextView
+        android:id="@+id/product_nomore"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/offset_pxtodx_100"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/st_mall_home_instred_nomore"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/font_size_pxtosp_24" />
+
+</LinearLayout>

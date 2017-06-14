@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/mall_category_img"
+        android:layout_width="wrap_content"
+        android:layout_height="101.5dp"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="101.5dp"
+        android:minWidth="101.5dp" />
+
+    <TextView
+        android:id="@+id/mall_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lines="2"
+        android:text="史迪奇Q版毛绒玩具"
+        android:textColor="#ff333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mall_category_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="￥49.0"
+        android:textColor="#fff15353"
+        android:textSize="13sp" />
+
+</LinearLayout>

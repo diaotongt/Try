@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+   	<!-- 上部标题 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        
+       <LinearLayout 
+           	android:id="@+id/ll_payticketfilm_hotmovie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_payticketfilm_hotmovie_title"
+                android:layout_width="match_parent"
+                android:background="#dedede"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="正在热映"
+                android:textSize="16sp" />
+            <View 
+                android:id="@+id/v_payticketfilm_hotmovie_line"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/color_blue"/>
+        </LinearLayout>   
+        
+        <LinearLayout 
+            android:id="@+id/ll_payticketfilm_comingmovie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_payticketfilm_comingmovie_title"
+                android:layout_width="match_parent"
+                android:background="#dedede"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="即将上映"
+                android:textSize="16sp" />
+            <View 
+                android:id="@+id/v_payticketfilm_comingmovie_line"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/color_blue"/>
+        </LinearLayout>   
+        
+        
+    </LinearLayout>
+
+    <!-- 侧滑内容 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_payticket_film"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

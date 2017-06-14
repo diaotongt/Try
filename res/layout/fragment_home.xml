@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wangnan -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+   
+    
+   	<ScrollView
+        android:id="@+id/scrollview_frament_home" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0b182e"
+            android:orientation="vertical">
+            
+            <View android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0fff"/>
+            
+         
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#0b182e"
+                android:orientation="horizontal">
+
+                <Gallery 
+				    android:id="@+id/gallery_fragment_home"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:spacing="40dp"
+				    android:layout_marginTop="5dp">              		            
+                </Gallery>
+                
+            </LinearLayout>
+
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="#0b182e"
+                android:gravity="center">
+                
+                <TextView
+                    android:id="@+id/tv_fragment_home_gallery_moviename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可思议"
+                    android:textSize="20sp"
+                    android:textColor="#fff">               
+                </TextView>
+               	
+                <LinearLayout 
+                    android:id="@+id/ll_fragment_home_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="#659d0e"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+                    
+	                <TextView
+	                    android:id="@+id/tv_fragment_home_score1" 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="20dp"
+	                    android:background="#659d0e"
+	                    android:text="9"
+	                    android:textSize="18dp"
+	                    android:textColor="#fff" />
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="20dp"
+	                    android:paddingTop="4dp"
+	                    android:text="."
+	                    android:textSize="13dp"
+	                    android:textColor="#fff"
+	                    android:background="#659d0e" />
+	                
+	                <TextView 
+	                    android:id="@+id/tv_fragment_home_score2" 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="20dp"
+	                    android:paddingTop="4dp"
+	                    android:text="5"
+	                    android:textSize="13dp"
+	                    android:textColor="#fff"
+	                    android:background="#659d0e" />
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#0b182e">
+
+                <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/home_rectangle"/>
+                <Button
+                    android:id="@+id/btn_fragment_home_payticket"                    
+                    android:layout_gravity="center"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="选座购票"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/home_fragment_btn_shape1" />
+            </FrameLayout>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff">
+                <TextView
+                    android:id="@+id/tv_fragment_home_below_btn_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="多啦A梦软科幻"
+                    android:textSize="16sp"
+                    android:textColor="#fb8800"
+                    android:drawableLeft="@drawable/quot" />
+                
+                <LinearLayout
+                    android:id="@+id/ll_fragment_home_below_btn_word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:visibility="gone" >
+	                <TextView
+	                    android:id="@+id/tv_fragment_home_below_btn_word2_peoplecount"
+	                    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="9384"
+                    	android:textSize="16sp"
+	                    android:textColor="#fb8800" />
+	                <TextView
+	                    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="人想看 - "
+                    	android:textSize="16sp"
+	                    android:textColor="#6000" />
+	                
+	                <TextView
+	                    android:id="@+id/tv_fragment_home_below_btn_word2_movietype"
+	                    android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:text="喜剧"
+                    	android:textSize="16sp"
+	                    android:textColor="#6000" />
+                    
+                </LinearLayout>                                                     
+            </FrameLayout>
+          
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fff">
+                
+                <View 
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#3000"/>
+            </FrameLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="#fff">
+                
+                <RelativeLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+                    <TextView 
+                        android:id="@+id/tv_fragment_home_hotmovie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="65"
+                        android:textSize="20sp"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fragment_home_hotmovie"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="正在热映"
+                        android:textSize="12sp"
+                        android:textColor="#7000"
+                        android:drawableRight="@drawable/home_movie_right_mark"
+                        android:drawablePadding="6dp"/>
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+                    <TextView
+                        android:id="@+id/tv_fragment_home_comingmovie"                    
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="51"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fragment_home_comingmovie"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="即将上映"
+                        android:textSize="12sp"
+                        android:textColor="#7000"
+                        android:drawableRight="@drawable/home_movie_right_mark"
+                        android:drawablePadding="6dp"/>
+                        
+                </RelativeLayout>
+                <RelativeLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1" >
+                    <TextView 
+                        android:id="@+id/tv_fragment_home_cinemacount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="161"
+                        android:textSize="20sp"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fragment_home_cinemacount"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="找影院"
+                        android:textSize="12sp"
+                        android:textColor="#7000"
+                        android:drawableRight="@drawable/home_movie_right_mark"
+                        android:drawablePadding="6dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+            
+            <!-- 首页内容-1 -->
+            <include layout="@layout/fragment_home_first_content"/>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+            
+            <!-- 条幅广告 -->
+            <include layout="@layout/fragment_home_content_banner"/>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+
+            <!-- 首页内容-2 -->
+            <include layout="@layout/fragment_home_second_content"/>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+            
+            <!-- 首页内容-3 -->
+            <include layout="@layout/fragment_home_three_content"/>
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#ddd">             
+            </FrameLayout>
+            
+        </LinearLayout>
+    </ScrollView> 
+    
+   	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0b182e">
+        
+        <TextView      
+	    android:id="@+id/selectcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@drawable/city_select_array"
+            android:drawablePadding="5dp"/>
+            
+        
+        <ImageView 
+            android:id="@+id/iv_fragment_home_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_logo_mtime"
+            android:layout_centerInParent="true"/>
+        
+        <ImageView 
+            android:id="@+id/iv_fragment_home_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/title_search_icon"/>
+        
+        <ImageView 
+            android:id="@+id/iv_fragment_home_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_fragment_home_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/mall_home_scan"/>
+    </RelativeLayout>
+
+</RelativeLayout>

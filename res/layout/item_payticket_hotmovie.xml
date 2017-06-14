@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        
+        <ImageView 
+            android:id="@+id/iv_payticket_hotmovie_icon"
+            android:layout_width="85dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_default"/>
+        
+        <TextView 
+             android:id="@+id/tv_payticket_hotmovie_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/iv_payticket_hotmovie_icon"
+             android:layout_toRightOf="@id/iv_payticket_hotmovie_icon"
+             android:textSize="18sp"
+             android:textColor="#000" 
+             android:lines="1"
+             android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+             android:id="@+id/tv_payticket_hotmovie_score"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/tv_payticket_hotmovie_title"
+             android:layout_toRightOf="@id/tv_payticket_hotmovie_title"
+             android:layout_marginRight="8dp"
+             android:textColor="#659d0e"
+             android:textSize="14sp"
+             android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_payticket_hotmovie_commonspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_payticket_hotmovie_title"
+            android:layout_alignLeft="@id/tv_payticket_hotmovie_title"
+            android:layout_marginTop="4dp"
+            android:textColor="#fa8800"
+            android:drawableLeft="@drawable/quot_film_on" />
+        
+        <TextView 
+            android:id="@+id/tv_payticket_hotmovie_comingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_payticket_hotmovie_commonspecial"
+            android:layout_below="@id/tv_payticket_hotmovie_commonspecial"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="#6000" />
+        
+        <TextView
+            android:id="@+id/tv_payticket_hotmovie_cinema_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_payticket_hotmovie_comingtime"
+            android:layout_below="@id/tv_payticket_hotmovie_comingtime"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="#6000" />
+        	
+        <Button
+            android:id="@+id/btn_payticket_hotmovie_pay"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_fragment_btn_shape1"
+            android:text="购票"
+            android:textColor="#fff" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:background="#3000"/>
+    
+</LinearLayout>

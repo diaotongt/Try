@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atguigu.mtime"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="internalOnly">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取网路状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.atguigu.mtime.user.data.LoacalUserInfo"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 选择城市 -->
+        <activity
+            android:name="com.atguigu.mtime.SelectCity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name=".AdvActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_adv" >
+        </activity>
+        <activity
+            android:name=".UserMessageActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_message" >
+        </activity>
+        <activity
+            android:name=".UserRegisterActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_register" >
+        </activity>
+        <activity
+            android:name=".UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_login" >
+        </activity>
+        <activity
+            android:name=".UserCartActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_cart" >
+        </activity>
+        <activity
+            android:name=".UserChildRootActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_child_root"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <!-- 浏览器Activity -->
+        <activity
+            android:name="com.atguigu.mtime.mall.BrowserActivity"
+            android:launchMode="singleTop" />
+	    
+	<!-- 轮播图浏览器Activity -->
+        <activity
+            android:name="com.atguigu.mtime.mall.BrowserScrollActivity"
+            android:launchMode="singleTop" >
+        </activity>
+	
+    	<!-- 不带title的浏览器Activity -->
+        <activity
+            android:name="com.atguigu.mtime.mall.BrowserNoTitleActivity"
+            android:launchMode="singleTop" >
+        </activity>
+	
+	<!-- 购物车浏览器 -->
+        <activity
+            android:name="com.atguigu.mtime.mall.BrowserCartActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 二维码扫描 -->
+        <activity
+            android:name="com.atguigu.mtime.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+	
+	<!-- 商城的搜索框 -->
+        <activity
+            android:name="com.atguigu.mtime.mall.MallSearchAty"
+            android:theme="@style/AppTheme" >
+        </activity>
+	
+	<activity
+            android:name=".UserGrandChildRootActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_grand_child_root"
+            android:launchMode="singleTask" >
+        </activity>
+	
+		<activity
+	   		android:name="com.atguigu.mtime.Discover_news_item"
+	    	android:screenOrientation="portrait"
+            android:label="@string/Discover_news_item" />
+	    
+        <activity
+            android:name="com.atguigu.mtime.Discover_Ranklist_item"
+            android:screenOrientation="portrait"
+            android:label="@string/Discover_ranklist_item" />
+	    
+	<!-- shareSDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name=".yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+	    
+	<activity
+            android:name="com.atguigu.mtime.Chinese_Top_Activity"
+            android:label="@string/Chinese_Top_Activity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.atguigu.mtime.Discover_film_item"
+            android:label="@string/Discover_film_item"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.atguigu.mtime.Total_Activity"
+            android:label="@string/Total_Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.atguigu.mtime.Time_Top_Activity"
+            android:label="@string/Time_Top_Activity"
+            android:launchMode="singleTask" >
+        </activity>
+    </application>
+    
+
+</manifest>

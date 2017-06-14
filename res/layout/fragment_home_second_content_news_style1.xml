@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+	android:paddingTop="10dp">
+    
+    <ImageView 
+        android:id="@+id/iv_fragment_home_second_content_news_style1"
+        android:layout_width="105dp"
+        android:layout_height="75dp"
+        android:padding="0.5dp"
+        android:background="#6000"
+        android:src="#fff"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_fragment_home_second_content_news_style1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_fragment_home_second_content_news_style1"
+        android:layout_toRightOf="@id/iv_fragment_home_second_content_news_style1"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:text="美人鱼首曝"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+
+    <TextView 
+        android:id="@+id/tv_fragment_home_second_content_news_style1_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fragment_home_second_content_news_style1_title" 
+        android:layout_below="@id/tv_fragment_home_second_content_news_style1_title"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:text="周星驰手绘海报"
+        android:textSize="14sp"
+        android:textColor="#6000"/>
+    
+    <TextView 
+        android:id="@+id/tv_fragment_home_second_content_news_style1_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fragment_home_second_content_news_style1_desc"
+        android:layout_below="@id/tv_fragment_home_second_content_news_style1_desc"
+        android:layout_marginTop="5dp"
+        android:text="4小时前"
+        android:textSize="12sp"
+        android:textColor="#6000" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/iv_fragment_home_second_content_news_style1"
+        android:layout_marginTop="10dp"
+        android:background="#4000" />
+    
+</RelativeLayout>

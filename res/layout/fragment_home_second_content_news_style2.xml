@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="168dp"
+    android:paddingTop="10dp" >
+    
+	<TextView 
+	    android:id="@+id/tv_fragment_home_second_content_news_style2_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="16dp"
+	    android:text="《叶问3》曝光美版人物海报"
+	    android:textSize="16sp" />
+	
+	<TextView 
+	    android:id="@+id/tv_fragment_home_second_content_news_style2_desc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/tv_fragment_home_second_content_news_style2_title"
+	    android:layout_below="@id/tv_fragment_home_second_content_news_style2_title"
+	    android:layout_marginTop="5dp"
+	    android:lines="1"
+	    android:ellipsize="end"
+	    android:text="甄志丹の泰森亮出看家功夫"
+	    android:textSize="14sp"
+	    android:textColor="#6000"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_fragment_home_second_content_news_style2_img1"
+	    android:layout_width="100dp"
+	    android:layout_height="70dp"
+	    android:layout_alignLeft="@id/tv_fragment_home_second_content_news_style2_desc"
+	    android:layout_below="@id/tv_fragment_home_second_content_news_style2_desc"
+	    android:layout_marginTop="5dp"
+	    android:padding="0.5dp"
+	    android:background="#3000"
+	    android:src="#fff"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_fragment_home_second_content_news_style2_img2"
+	    android:layout_width="100dp"
+	    android:layout_height="70dp"
+	    android:layout_alignTop="@id/iv_fragment_home_second_content_news_style2_img1"
+	    android:layout_toRightOf="@id/iv_fragment_home_second_content_news_style2_img1"
+	    android:layout_marginLeft="3dp"
+	    android:padding="0.5dp"
+	    android:background="#6000"
+	    android:src="#fff" />
+	<ImageView
+	    android:id="@+id/iv_fragment_home_second_content_news_style2_img3"
+	    android:layout_width="100dp"
+	    android:layout_height="70dp"
+	    android:layout_alignTop="@id/iv_fragment_home_second_content_news_style2_img2"
+	    android:layout_toRightOf="@id/iv_fragment_home_second_content_news_style2_img2"
+	    android:layout_marginLeft="3dp"
+	    android:padding="0.5dp"
+	    android:background="#3000"
+	    android:src="#fff" />
+	
+	<TextView 
+	    android:id="@+id/tv_fragment_home_second_content_news_style2_time"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_fragment_home_second_content_news_style2_img1"
+        android:layout_below="@id/iv_fragment_home_second_content_news_style2_img1"
+        android:layout_marginTop="5dp"
+        android:text="4小时前"
+        android:textSize="12sp"
+        android:textColor="#6000"/>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/tv_fragment_home_second_content_news_style2_time"
+        android:layout_marginTop="10dp"
+        android:background="#4000" />
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="140dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="16dp" >
+	    
+	    <TextView
+	        android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="15日"
+	        android:textSize="14sp"
+	        android:textColor="#6000"/>
+	    
+	    <ImageView 
+	        android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_icon"
+	        android:layout_width="80dp"
+	        android:layout_height="120dp"
+	        android:layout_toRightOf="@id/item_payticketfilm_comingpager_content_comingmovie_item_time"
+	        android:layout_marginLeft="10dp"
+	        android:scaleType="fitXY" />
+	    
+	    <TextView
+	        android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/item_payticketfilm_comingpager_content_comingmovie_icon"
+	        android:layout_marginLeft="16dp"
+	        android:text="没女神探"
+	        android:textSize="18sp"
+	        android:textColor="#000"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_ll"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignLeft="@id/item_payticketfilm_comingpager_content_comingmovie_item_title"
+	        android:layout_below="@id/item_payticketfilm_comingpager_content_comingmovie_item_title"
+	        android:layout_marginTop="4dp">
+	    	<TextView 
+	        	android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_people"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="66"
+	        	android:textSize="14sp"
+	        	android:textColor="#fa8800"/>
+	    	<TextView 
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="人想看 - "
+	        	android:textSize="14sp"
+	        	android:textColor="#6000"/>
+	    	<TextView 
+	        	android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_movietype"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="爱情 | 喜剧"
+	        	android:textSize="14sp"
+	        	android:textColor="#6000"/>
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/item_payticketfilm_comingpager_content_comingmovie_item_director"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/item_payticketfilm_comingpager_content_comingmovie_item_ll"
+	        android:layout_below="@id/item_payticketfilm_comingpager_content_comingmovie_item_ll"
+	        android:layout_marginTop="4dp"
+	        android:text="导演：白羊"
+	        android:textSize="14sp"
+	        android:textColor="#6000" />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="36dp"
+	        android:orientation="horizontal"
+	        android:layout_alignLeft="@id/item_payticketfilm_comingpager_content_comingmovie_item_director"
+	        android:layout_alignBottom="@id/item_payticketfilm_comingpager_content_comingmovie_icon">
+	        <Button 
+	            android:id="@+id/btn_item_payticketfilm_comingpager_content_comingmovie_alert"
+	            android:layout_width="96dp"
+	            android:layout_height="36dp"
+	            android:text="上映提醒"
+	            android:textSize="14sp"
+	            android:textColor="#659d0e"
+	            android:background="@drawable/actor_detail_unlike_background_on"/>
+	        
+	        <Button 
+	            android:id="@+id/btn_item_payticketfilm_comingpager_content_comingmovie_pre"
+	            android:layout_width="88dp"
+	            android:layout_height="36dp"
+	            android:layout_marginLeft="8dp"
+	            android:text="预告片"
+	            android:textSize="14sp"
+	            android:textColor="#659d0e"
+	            android:background="@drawable/actor_detail_unlike_background_on"
+	            android:visibility="gone"/>
+	        
+	    </LinearLayout>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_alignLeft="@id/item_payticketfilm_comingpager_content_comingmovie_icon"
+	        android:layout_alignParentBottom="true"
+	        android:background="#3000"/>
+	</RelativeLayout>
+
+</LinearLayout>

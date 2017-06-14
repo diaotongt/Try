@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/lv_fm_user_my_offset_goods_mid_content3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_fm_user_my_offset_goods_mid_content3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb"
+        android:gravity="center"
+        android:text="点击底部按钮添加优惠券~"
+        android:textColor="#777"
+        android:textSize="18sp" />
+
+</RelativeLayout>

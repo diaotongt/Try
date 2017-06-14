@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cell"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/offset_pxtodx_450"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/cella"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/app_name"
+                android:minWidth="@dimen/offset_pxtodx_450"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/cella_main_title"
+                android:layout_width="156.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                android:layout_marginTop="@dimen/offset_20px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_pxtosp_36" />
+
+            <TextView
+                android:id="@+id/cella_sub_title"
+                android:layout_width="168.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cella_main_title"
+                android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                android:layout_marginTop="@dimen/offset_14px"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_777777"
+                android:textSize="@dimen/font_size_pxtosp_26" />
+
+            <LinearLayout
+                android:id="@+id/cella_flashsale_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/offset_pxtodx_20"
+                android:layout_marginLeft="@dimen/offset_pxtodx_34"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/cella_flashsale_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_777777"
+                    android:textSize="@dimen/font_size_pxtosp_26" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/offset_4dp" >
+
+                    <Button
+                        android:id="@+id/cella_flashsale_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/offset_2dp"
+                        android:background="@drawable/flashsale"
+                        android:text="00"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/offset_2dp"
+                        android:text=":"
+                        android:textSize="@dimen/font_size_pxtosp_28" />
+
+                    <Button
+                        android:id="@+id/cella_flashsale_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/offset_2dp"
+                        android:background="@drawable/flashsale"
+                        android:text="00"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/offset_2dp"
+                        android:text=":"
+                        android:textSize="@dimen/font_size_pxtosp_28" />
+
+                    <Button
+                        android:id="@+id/cella_flashsale_mill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/offset_2dp"
+                        android:background="@drawable/flashsale"
+                        android:text="00"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/offset_0_5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/color_d8d8d8" />
+
+        <LinearLayout
+            android:layout_width="@dimen/offset_0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/cellc1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:minHeight="@dimen/offset_pxtodx_225"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/cellc1_main_title"
+                    android:layout_width="84.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                    android:layout_marginTop="@dimen/offset_20px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_pxtosp_36" />
+
+                <TextView
+                    android:id="@+id/cellc1_sub_title"
+                    android:layout_width="64.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cellc1_main_title"
+                    android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                    android:layout_marginTop="@dimen/offset_14px"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_777777"
+                    android:textSize="@dimen/font_size_pxtosp_26" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/subSecond_seperated"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/offset_0_5dp"
+                android:background="@color/color_d8d8d8" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/cellc2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:minHeight="@dimen/offset_pxtodx_225"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/cellc2_main_title"
+                    android:layout_width="84.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                    android:layout_marginTop="@dimen/offset_20px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_pxtosp_36" />
+
+                <TextView
+                    android:id="@+id/cellc2_sub_title"
+                    android:layout_width="64.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cellc2_main_title"
+                    android:layout_marginLeft="@dimen/offset_pxtodx_30"
+                    android:layout_marginTop="@dimen/offset_14px"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_777777"
+                    android:textSize="@dimen/font_size_pxtosp_26" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cellb_seperated"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/offset_0_5dp"
+        android:background="@color/color_d8d8d8" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/offset_pxtodx_225" >
+
+        <ImageView
+            android:id="@+id/cellb"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/offset_pxtodx_242"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/cellb_main_title"
+            android:layout_width="86.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/offset_pxtodx_30"
+            android:layout_marginTop="@dimen/offset_20px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_pxtosp_36" />
+
+        <TextView
+            android:id="@+id/cellb_sub_title"
+            android:layout_width="116.0dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cellb_main_title"
+            android:layout_marginLeft="@dimen/offset_pxtodx_30"
+            android:layout_marginTop="@dimen/offset_14px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_777777"
+            android:textSize="@dimen/font_size_pxtosp_26" />
+
+        <LinearLayout
+            android:id="@+id/cellb_flashsale_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/offset_pxtodx_20"
+            android:layout_marginLeft="@dimen/offset_pxtodx_34"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/cellb_flashsale_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_777777"
+                android:textSize="@dimen/font_size_pxtosp_26" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/offset_4dp" >
+
+                <Button
+                    android:id="@+id/cellb_flashsale_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/offset_2dp"
+                    android:background="@drawable/flashsale"
+                    android:text="00"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/offset_2dp"
+                    android:text=":"
+                    android:textSize="@dimen/font_size_pxtosp_28" />
+
+                <Button
+                    android:id="@+id/cellb_flashsale_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/offset_2dp"
+                    android:background="@drawable/flashsale"
+                    android:text="00"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/offset_2dp"
+                    android:text=":"
+                    android:textSize="@dimen/font_size_pxtosp_28" />
+
+                <Button
+                    android:id="@+id/cellb_flashsale_mill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/offset_2dp"
+                    android:background="@drawable/flashsale"
+                    android:text="00"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/order_remind_seperated_region_background" />
+
+</LinearLayout>

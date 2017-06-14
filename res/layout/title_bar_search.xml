@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/text_blue"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="@dimen/title_bar_normal_back_view_width"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentLeft="true"
+        android:clickable="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_bar_normal_back_margin_left"
+            android:background="@drawable/title_btn_back_background"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_search_search_margin_right"
+        android:background="@null"
+        android:text="@string/str_search_something"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_bar_search_search_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/search_region"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_search_region_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_bar_search_region_margin_left"
+        android:layout_marginRight="@dimen/title_bar_search_region_margin_right"
+        android:layout_toLeftOf="@id/search"
+        android:layout_toRightOf="@id/back"
+        android:background="@drawable/title_bar_search_region_background" >
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_bar_search_scan_margin_right"
+            android:background="@drawable/title_bar_search_button_clear_background"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_bar_search_content_view_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_bar_search_content_margin_left"
+            android:layout_marginRight="@dimen/title_bar_search_content_margin_right"
+            android:layout_toLeftOf="@id/cancel"
+            android:background="@null"
+            android:drawableLeft="@drawable/title_bar_search_zoomin"
+            android:drawablePadding="@dimen/title_bar_search_content_drawing_padding"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:hint="@string/str_title_search_hint_content"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_bbbbbb"
+            android:textSize="@dimen/title_bar_search_content_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxEms="12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_bar_search_search_text_size"
+        android:visibility="invisible" />
+
+</RelativeLayout>
